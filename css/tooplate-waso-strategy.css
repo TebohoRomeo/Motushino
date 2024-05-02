@@ -715,13 +715,13 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background: var(--dark-color);
+  background: var(--white-color);
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .site-footer .copyright-text {
-  color: var(--white-color);
+  color: var(--dark-color);
   font-size: var(--copyright-text-font-size);
 }
 

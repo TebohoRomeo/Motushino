@@ -324,7 +324,7 @@ strong {
   NAVIGATION               
 -----------------------------------------*/
 .navbar {
-  background: var(--dark-color);
+  background: var(--white-color);
   position: fixed;
   top: 0;
   right: 0;
@@ -367,7 +367,7 @@ strong {
 }
 
 .nav-link {
-  color: var(--p-white-color);
+  color: var(--p-color);
   font-size: 16px;
   position: relative;
 }
@@ -1003,7 +1003,7 @@ button:focus:not(:focus-visible) {
   SITE FOOTER               
 -----------------------------------------*/
 .site-footer {
-  background: var(--dark-color);
+  background: var(--white-color);
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -1023,14 +1023,14 @@ button:focus:not(:focus-visible) {
     padding: 5px 10px; /* Adjust padding as needed */
     min-width: 350px; /* Set a minimum width */
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .social-icon-link {
     display: inline-block;
     padding: 5px; /* Adjust padding as needed */
     min-width: 40px; /* Set a minimum width */
-    color: #fff;
+    color: #000;
 }
 
 
@@ -1040,7 +1040,7 @@ button:focus:not(:focus-visible) {
 
 .site-footer .social-icon-link:hover,
 .footer-menu-link:hover {
-  color: var(--white-color);
+  color: var(--danger-color);
 }
 
 .copyright-text {
