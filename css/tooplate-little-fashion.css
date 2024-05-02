@@ -324,7 +324,7 @@ strong {
   NAVIGATION               
 -----------------------------------------*/
 .navbar {
-  background: var(--white-color);
+  background: var(--dark-color);
   position: fixed;
   top: 0;
   right: 0;
@@ -367,7 +367,7 @@ strong {
 }
 
 .nav-link {
-  color: var(--p-color);
+  color: var(--p-white-color);
   font-size: 16px;
   position: relative;
 }
@@ -449,7 +449,7 @@ strong {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--white-color);
+  background: var(--dark-color);
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -465,7 +465,7 @@ strong {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--white-color);
+  background: var(--dark-color);
   width: 30px;
   height: 2px;
   content: '';
@@ -485,7 +485,6 @@ strong {
 .site-header {
   background-color: var(--section-bg-color);
   position: relative;
-  color: #ff0000;
   overflow: hidden;
   margin-top: 86px;
 }
@@ -1003,7 +1002,7 @@ button:focus:not(:focus-visible) {
   SITE FOOTER               
 -----------------------------------------*/
 .site-footer {
-  background: var(--white-color);
+  background: var(--dark-color);
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -1023,14 +1022,14 @@ button:focus:not(:focus-visible) {
     padding: 5px 10px; /* Adjust padding as needed */
     min-width: 350px; /* Set a minimum width */
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .social-icon-link {
     display: inline-block;
     padding: 5px; /* Adjust padding as needed */
     min-width: 40px; /* Set a minimum width */
-    color: #000;
+    color: #fff;
 }
 
 
@@ -1040,7 +1039,7 @@ button:focus:not(:focus-visible) {
 
 .site-footer .social-icon-link:hover,
 .footer-menu-link:hover {
-  color: var(--danger-color);
+  color: var(--white-color);
 }
 
 .copyright-text {
