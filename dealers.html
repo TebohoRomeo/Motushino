@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Motus Hino</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+        <link href="css/tooplate-waso-strategy.css" rel="stylesheet">
+
+
+        <style>
+            /* Style to horizontally align the map and dealer section */
+            .section-container {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+    
+            /* Style for the map */
+            #map {
+                height: 400px;
+                width: 100%;
+                margin-top: 120px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <!-- <strong><span>Motus</span> Hino</strong> -->
+                        <img src="./images/Logo.png" alt="">
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./hino-services/trucks.html">Trucks</a>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hino Aftersales</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <li><a class="dropdown-item" href="#">Hino C.A.R.E</a></li>
+                                    <li><a class="dropdown-item" href="./hino-services/hino-connect.html">Hino CONNECT</a></li>
+                                    <li><a class="dropdown-item" href="#">Hino Parts and Services</a></li>
+                                    <!-- Add more submenu items as needed -->
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false"  href="dealers.html">Find Dealer</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <li><a class="dropdown-item" href="../tshwane.html">Hino Tshwane</a></li>
+                                    <li><a class="dropdown-item" href="../nelspruit.html">Hino Nelspruit</a></li>
+                                    <li><a class="dropdown-item" href="../parow.html">Hino Parrow</a></li>
+                                    <!-- Add more submenu items as needed -->
+                                </ul>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- <header class="site-header section-padding d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12">
+                            <h1>
+                                <span class="d-block text-primary">Your favorite questions</span>
+                                <span class="d-block text-dark">and our answers to them</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+
+            <section class="hero">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+
+                        <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <!-- <small class="small-title">Introducing Waso Strategy <strong class="text-warning">01/05</strong></small> -->
+
+                                            <h1 class="slick-title">HINO TSHWANE</h1>
+                                            <div class="d-flex align-items-center mt-4">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/Dealers/1706777994438.jpg" class="img-fluid carousel-image" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <!-- <small class="small-title">Supporting New Project <strong class="text-warning">01/05</strong></small> -->
+
+                                            <h1 class="slick-title">HINO MPUMALANGA</h1>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/Dealers/Shoot 2.jpg" class="img-fluid carousel-image" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+
+                                            <h1 class="slick-title">HINO PARROW</h1>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/Dealers/2024-02-06-16-32-34-109.PNG" class="img-fluid carousel-image" alt="">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </section>
+
+
+
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <section class="faq section-padding">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2>Find Our Dealers.</h2>
+                                        <div class="accordion" id="accordionGeneral">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne" aria-expanded="true" aria-controls="accordionGeneralOne">
+                                                    Gauteng
+                                                    </button>
+                                                </h2>
+                                                <div id="accordionGeneralOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph"><a href="tshwane.html" target="_blank">Hino Tshwane</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo" aria-expanded="false" aria-controls="accordionGeneralTwo">
+                                                    Mpumalanga
+                                                    </button>
+                                                </h2>
+                                                <div id="accordionGeneralTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph"><a href="nelspruit.html" target="_blank">Hino Nelspruit</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree" aria-expanded="false" aria-controls="accordionGeneralThree">
+                                                    Cape Town
+                                                    </button>
+                                                </h2>
+                                                <div id="accordionGeneralThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">
+                                                    <div class="accordion-body">
+                                                        <p class="large-paragraph"><a href="parow.html" target="_blank">Hino Parrow</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-8">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-12 me-auto mb-4">
+                        <h4 class="text-white mb-3"><a href="index.html">
+                            <img src="./images/Logo.png" alt="">
+                        </a></h4>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Motus Hino</strong></p>
+                        <br>
+                    </div>
+                    
+                    <div class="col-lg-2 col-8 hide-footer">
+                        <h5 class="text-white mb-3">Find Dealer</h5>
+
+                        <ul class="footer-menu flex-wrap">
+                            <li class="footer-menu-item"><a href="tshwane.html" class="footer-menu-link">Hino Gauteng</a></li>
+
+                            <li class="footer-menu-item"><a href="nelspruit.html" class="footer-menu-link">Hino Mpumalanga</a></li>
+
+                            <li class="footer-menu-item"><a href="parow.html" class="footer-menu-link">Hino Cape Town</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 hide-footer">
+                        <h5 class="text-white mb-3">Services</h5>
+
+                        <ul class="footer-menu flex-wrap">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Hino C.A.R.E</a></li>
+
+                            <li class="footer-menu-item"><a href="./services/hino-connect.html" class="footer-menu-link">Hino CONNECT</a></li>
+
+                            <li class="footer-menu-item"><a href="./services/parts-service.html" class="footer-menu-link">Hino Parts & Services</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-3 hide-footer">
+                        <h5 class="text-white mb-3">Media Platforms</h5>
+                        
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            // Replace this with your map initialization code
+            function initMap() {
+                var mapOptions = {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8
+                };
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+    
+        <!-- Load the Maps JavaScript API asynchronously -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+
+    </body>
+</html>
