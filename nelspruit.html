@@ -22,6 +22,22 @@
         <link rel="stylesheet" href="css/slick.css"/>
 
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+
+        <style>
+            /* Style to horizontally align the map and dealer section */
+            .section-container {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+    
+            /* Style for the map */
+            #map {
+                height: 400px;
+                width: 100%;
+                margin-top: 120px;
+            }
+        </style>
         
     </head>
     
@@ -101,10 +117,70 @@
                 </div>
             </section>
 
+            <section class="team section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="mb-5">Our <span>Services</span></h2>
+                        </div>
+
+                        <div class="col-lg-4 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <!-- <img src="images/people/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid custom-circle-image team-image me-4" alt=""> -->
+            
+                                <div class="team-info">
+                                    <h5 class="mb-0">Physical Address</h5>
+                                    <strong class="text-muted">cnr R40 & Willies St, Mbombela, 1201</strong>
+            
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <!-- <img src="images/people/portrait-british-woman.jpeg" class="img-fluid custom-circle-image team-image me-4" alt=""> -->
+            
+                                <div class="team-info">
+                                    <h5 class="mb-0">Sales Manager</h5>
+                                    <strong class="text-muted">Raole Strijdom</strong>
+                                    <br>
+                                    <strong class="text-muted">rstrijdom@mostushino.co.za</strong>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4 mb-lg-0 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <!-- <img src="images/people/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid custom-circle-image team-image me-4" alt=""> -->
+            
+                                <div class="team-info">
+                                    <h5 class="mb-0">Service Manager</h5>
+                                    <strong class="text-muted">Jan Nel</strong>
+                                    <br>
+                                    <strong class="text-muted">jnel@mostushino.co.za</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-lg-0 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <!-- <img src="images/people/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid custom-circle-image team-image me-4" alt=""> -->
+            
+                                <div class="team-info">
+                                    <h5 class="mb-0">Parts Manager</h5>
+                                    <strong class="text-muted">Quinton Schutte</strong>
+                                    <br>
+                                    <strong class="text-muted">Qschutte@mostushino.co.za</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="contact section-padding">
                 <div class="container">
                     <div class="row">
-                        
                         <div class="col-lg-6 col-12">
                             <h2 class="mb-4">Book <span>Appointment</span></h2>
                             <form class="contact-form me-lg-5 pe-lg-3" role="form">
@@ -138,52 +214,9 @@
                                 </div>
                             </form>
                         </div>
-
-
-                        <div class="col-lg-6 col-12 mt-5 ms-auto">
-                            <div class="row">
-                                <div class="col-6 border-end contact-info"> 
-                                    <h6 class="mb-3">Our Office</h6>
-
-                                    <p class="text-muted"> c/o R40 and Wille Street, Riverside Park, Nelspruit.</p>
-                                </div>
-
-                                <div class="col-6 border-start contact-info">
-                                	<h6 class="mb-3">Our Socials</h6>
-
-                                    <ul class="social-icon">
-
-                                        <li><a href="#" class="social-icon-link bi-messenger"></a></li>
-
-                                        <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
-                                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                                        <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-12 contact-info">
-                                	<h6 class="mb-3">Main Info</h6>
-                                    <p> E-mail.dbosch@motustoyota.co.za</p>
-                                    <a class="custom-link">
-                                        T: 013 753 4800
-                                    </a>
-                                    &nbsp;
-                                    &nbsp;
-                                    <a class="custom-link">
-                                        D: 013 753 4838
-                                    </a>
-                                    &nbsp;
-                                    &nbsp;
-                                    <a class="custom-link">
-                                        M: 071 201 2898
-                                    </a>
-                                    <!-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p> -->
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-lg-6">
+                            <div id="map"></div>
+                        </div>                     
                     </div>
                 </div>
             </section>
@@ -256,7 +289,20 @@
 		<script src="js/niceselect.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
-
-
+        <script>
+            // Replace this with your map initialization code
+            function initMap() {
+                var mapOptions = {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8
+                };
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+    
+        <!-- Load the Maps JavaScript API asynchronously -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
     </body>
 </html>

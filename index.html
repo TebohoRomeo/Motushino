@@ -75,7 +75,6 @@
                                 <li><a class="dropdown-item" href="./tshwane.html">Hino Tshwane</a></li>
                                 <li><a class="dropdown-item" href="./nelspruit.html">Hino Nelspruit</a></li>
                                 <li><a class="dropdown-item" href="./parow.html">Hino Parrow</a></li>
-                                <!-- Add more submenu items as needed -->
                             </ul>
                         </li>
 
@@ -223,9 +222,27 @@
                 </div>
             </section>
 
-            <section class="featured-product section-padding">
+            <section class="quick-helps">
+                <div class="container-fluid p-0">
+                    <div class="row front-product" >
+                        <div class="col-lg-6 col-12">
+                            <a href="../hino-services/hino-connect.html">
+                                <img src="../hino-services/connect1.jpg" href="../hino-services/hino-connect.html"  class="img-fluid product-image" alt="">
+                            </a>
+                            <!-- <a href="" class="btn custom-btn bnt">Button</a> -->
+                        </div>
 
-                
+                        <div class="col-lg-6 col-12">
+                            <a href="../hino-services/hino-care.html" class="">
+                                <img src="../hino-services/hino-care.png"  class="img-fluid product-image" alt="">
+                            </a>
+                            <!-- <a href="" class="btn custom-btn bnt">Button</a> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-product section-padding">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-start">
@@ -315,12 +332,12 @@
                                     </div>
                                 </div>
                                 <!-- Add Paginaxtion -->
-                                <!-- <div class="swiper-pagination"></div> -->
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
             
                         <div class="col-12 text-start mt-4">
-                            <!-- <div class="swiper-pagination"></div> -->
                             <a href="./hino-services/trucks.html" class="btn custom-btn mt-4">VIEW ALL</a>
                         </div>
                     </div>
@@ -469,7 +486,7 @@
                 },
                 on: {
                     reachEnd: function () {
-                        this.params.slidesPerView = 'false';
+                        this.params.slidesPerView = 'true';
                     }
                 }
             });
