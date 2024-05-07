@@ -1226,6 +1226,10 @@ button:focus:not(:focus-visible) {
 
 }
 
+.cookie-container {
+  z-index: 1; /* Ensure it's above the about section */
+}
+
 .options-container {
   display: flex;
   justify-content: space-between;
