@@ -324,7 +324,7 @@ strong {
   NAVIGATION               
 -----------------------------------------*/
 .navbar {
-  background: var(--dark-color);
+  background: var(--white-color);
   position: fixed;
   top: 0;
   right: 0;
@@ -367,14 +367,14 @@ strong {
 }
 
 .nav-link {
-  color: var(--p-white-color);
-  font-size: 16px;
+  color: var(--p-color);
+  font-size: 20px;
   position: relative;
 }
 
 .nav-links {
   color: var(--p-color);
-  font-size: 16px;
+  font-size: 25px;
   position: relative;
 }
 
@@ -1217,11 +1217,11 @@ button:focus:not(:focus-visible) {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   z-index: 1; /* Ensure it's above the about section */
-  width: 95%;
-
+  width: 85%;
+  border-radius: 5px;
   margin-top: -25px;
-  margin-left: 30px;
-  padding: 20px 20px 30px 20px;
+  margin-left: 8%;
+  padding: 20px 150px 30px 20px;
   /* margin: -50px 30px 50px 30px; */
 
 }
