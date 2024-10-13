@@ -146,7 +146,7 @@
                 <div class="mt-2 mt-lg-auto">
                     <a href="./enquire-now.html" class="custom-link btn custom-btn">
                         Enquire Now
-                        <i class="bi-arrow-right ms-2"></i>
+                        <!-- <i class="bi-arrow-right ms-2"></i> -->
                     </a>
                 </div>
             </div>
@@ -561,6 +561,26 @@
   <script>
     var swiper = new Swiper('.swiper-feature-container', {
         slidesPerView: 3,
+        spaceBetween: 20,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            reachEnd: function () {
+                this.params.slidesPerView = 'false';
+            }
+        }
+    });
+</script>
+<script>
+    var swiper = new Swiper('.swiper-model-container', {
+        slidesPerView: 5,
         spaceBetween: 20,
         loop: false,
         pagination: {

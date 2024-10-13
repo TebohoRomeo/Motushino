@@ -731,6 +731,26 @@
       }
     });
   </script>
+   <script>
+    var swiper = new Swiper('.swiper-model-container', {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        loop: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            reachEnd: function () {
+                this.params.slidesPerView = 'false';
+            }
+        }
+    });
+</script>
 
 </body>
 

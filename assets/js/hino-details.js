@@ -9,7 +9,7 @@
           specs: [
             { Engine_capacity: '2989', Transmission: 'Manual', Emission_Level: 'Euro 2', Application: '' , Front_Axle_Type: '', Rear_Axle_Type: '' }
           ],
-          image: "truck_b.jpg"
+          image: "./../../../assets/hino-200/hino-200.png"
         },
         {
           name: "Hino 300 614 LWB",
