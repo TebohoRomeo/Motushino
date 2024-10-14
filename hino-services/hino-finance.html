@@ -27,6 +27,199 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* General styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro-carousel {
+        position: relative;
+    }
+
+    .carousel-item-a {
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .overlay-a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .intro-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+    }
+
+    .intro-title {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    /* .custom-btn {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    } */
+
+    /* Cards styling */
+    .card-container {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 3;
+    }
+
+    .card {
+        background-color: white;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* border-radius: 8px; */
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        background-color: #b30000;
+        color: #fff;
+    }
+
+    .card:hover a{
+        color: #fff;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* Responsive design for small screens */
+    @media (max-width: 768px) {
+        .intro-title {
+            font-size: 2rem;
+        }
+
+        .card-container {
+            flex-direction: column;
+            gap: 10px;
+            bottom: -20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+</style>
+<style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .service-box {
+            background-color: white;
+            /* border-radius: 10px; */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .hino-service {
+            /* padding: 20px; */
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-box img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .service-box h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+
+        .service-box p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .service-box .btn {
+            display: block;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            /* border-radius: 5px; */
+            text-decoration: none;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .service-box .btn:hover {
+            background-color: #b30000;
+        }
+
+        @media (max-width: 768px) {
+            .services-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</style>
 </head>
 
 <body>
@@ -104,24 +297,18 @@
     </div>
   </div>
   <main id="main">
-    <!-- <section class="options">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-12">
-                  <div class="options-container">
-                      <a href="hino-200.html" class="option">HINO 200</a>
-                      <span class="divider"></span>
-                      <a href="hino-300.html" class="option">HINO 300</a>
-                      <span class="divider"></span>
-                      <a href="hino-500.html" class="option">HINO 500 (brochure OS)</a>
-                      <span class="divider"></span>
-                      <a href="hino-700.html" class="option">HINO 700</a>
-                  </div>
-                  <div class="progress-line"></div>
-              </div>
-          </div>
+
+    <div class="card-container">
+      <div class="card">
+          <a href="#">BENEFITS</a>
       </div>
-  </section> -->
+      <div class="card">
+          <a href="#products">PRODUCTS</a>
+      </div>
+      <div class="card">
+          <a href="#onlineService">ONLINE SERVICES</a>
+      </div>
+  </div>
 
     <section class="des-list section-padding">
         <div class="container">
@@ -196,15 +383,14 @@
     </section>
     
     <section class="front-product section-padding section-t4">
-        <div class="container-fluid p-0">
-            <div class="row ">
-
+        <div class="container-fluid p-0"id="products">
+            <div class="row">
                 <div class="col-lg-6 col-12">
                     <img src="../hino-services/hino-finance-interia.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="col-lg-6 col-12 section-t4">
-                    <div class="px-5 py-5 py-lg-0">
+                    <div class="px-5 py-5 py-lg-0" >
                         <h1 class="">INSTALMENT FINANCE</h1>
                         <p class="mb-5">This method of finance allows you to buy your Hino/Toyota of choice by paying instalments over an agreed period. Ownership will pass to you as soon as you’ve paid all amounts due under the agreement. Financing periods can be structured between 12 to 60 months, with or without a final balloon payment. Market-related interest rates apply, which may be linked to the prime lending rate or alternatively fixed, over the agreed finance period. There is no minimum deposit payable unless there is a change to the current legislation or to your credit profile.</p>
                     </div>
@@ -229,6 +415,43 @@
             </div>
         </div>
     </section>
+    <section class="services-section section-padding section-t4" id="onlineService">
+      <h2>HFS ONLINE SERVICED</h2>
+      <div class="services-container">
+        <div class="hino-service">
+          <img src="../assets/img/red-hino.png" alt="">
+        </div>
+        <div class="hino-service">
+          <img src="../assets/img/red-hino.png" alt="">
+        </div>
+        <div class="hino-service">
+          <img src="../assets/img/red-hino.png" alt="">
+        </div>
+      </div>
+      <div class="services-container">
+          <div class="service-box">
+              <h3>APPLY ONLINE</h3>
+              <p>Easy and convenient way to apply for Finance</p>
+              <a href="#" class="btn">BUSINESS OWNERS</a>
+              <a href="#" class="btn">INDIVIDUALS</a>
+          </div>
+
+          <!-- Second Service Box -->
+          <div class="service-box">
+              <h3>ACCOUNT SERVICES</h3>
+              <p>With Hino Financial Services it's not just about finance, it's about the whole experience</p>
+              <a href="#" class="btn">ACCOUNT SERVICES</a>
+          </div>
+
+          <!-- Third Service Box -->
+          <div class="service-box">
+              <h3>ICONTRACT</h3>
+              <p>Check and digitally sign a series of very important documents to finalise your contract</p>
+              <a href="#" class="btn">BUSINESS OWNERS</a>
+          </div>
+      </div>
+  </section>
+
   </main><!-- End #main -->
 
   <section class="section-footer">
