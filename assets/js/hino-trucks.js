@@ -26,10 +26,10 @@ const data = {
         {
           name: "Hino 300 614 LWB MT",
           price: "R593,676 Excl VAT",
-          image: "./assets/img/product/HINO 700-2841 FC AMT 6X4.png",
+          image: "./assets/img/product/614-AT-SWB.jpg",
         },
         {
-          name: "Hino 300 714 SWB AT",
+          name: "Hino 300 614 LWB MT",
           price: "R649,624 Excl VAT",
           image: "./assets/img/product/714-SWB.jpg",
         },

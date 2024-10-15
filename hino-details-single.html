@@ -25,9 +25,58 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .series {
+        margin-bottom: 50px;
+    }
+    .series h2 {
+        font-size: 24px;
+    }
+    .models {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+    .model {
+        text-align: center;
+        cursor: pointer; /* Change cursor to pointer for clickable effect */
+        text-decoration: none; /* Remove underline from links */
+        color: inherit; /* Inherit color from parent */
+    }
+    .model img {
+        width: 150px;
+        height: auto;
+    }
+    .model p {
+        margin: 5px 0;
+    }
+    .details {
+        display: none; /* Initially hide details */
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    .back-button {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+    }
+</style>
 </head>
 
 <body>
+
+
+
+
+  <div id="details" class="details"></div>
+
+
+
+
 
   <!-- ======= Property Search Section ======= -->
   <div class="click-closed"></div>
