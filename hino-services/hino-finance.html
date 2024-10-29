@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Motushino</title>
+  <title>Motus Hino</title>
 
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -93,7 +93,7 @@
 
     .card {
         background-color: white;
-        width: 400px;
+        width: 300px;
         padding: 20px;
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -143,9 +143,9 @@
         } */
 
         .services-section {
-            padding: 50px 0;
+            padding: 40px 0;
             text-align: center;
-            background-color: #f9f9f9;
+            /* background-color: #f9f9f9; */
         }
 
         .services-section h2 {
@@ -160,19 +160,27 @@
             margin-top: 20px;
         }
 
+        .finance-container {
+            display: flex;
+            /* justify-content: center; */
+            /* gap: 50px; */
+
+            margin-top: 20px;
+        }
+
         .service-box {
-            background-color: white;
+            /* background-color: white; */
             /* border-radius: 10px; */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
             padding: 20px;
-            max-width: 500px;
+            max-width: 340px;
             text-align: center;
             transition: transform 0.3s;
         }
 
         .hino-service {
-            /* padding: 20px; */
-            max-width: 500px;
+          padding: 10px ;
+          max-width: 360px;
             text-align: center;
         }
 
@@ -183,6 +191,11 @@
         .service-box img {
             width: 80px;
             margin-bottom: 20px;
+        }
+
+        .hino-service img {
+            max-width: 30rem;
+            margin-bottom: 30px;
         }
 
         .service-box h3 {
@@ -217,6 +230,19 @@
                 flex-direction: column;
                 gap: 20px;
             }
+
+            .hino-service img {
+              width: 50rem;
+              margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 768px) {
+           
+
+            .hino-service img {
+              width: 50rem;
+              margin-bottom: 30px;
+            }
         }
     </style>
 </style>
@@ -234,15 +260,11 @@
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          
-          <li class="nav-item">
             <a class="nav-link " href="../hino-range-grid.html">Trucks</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="./hino-finance.html">Hino Financial Services</a>
+            <a class="nav-link " href="./hino-finance.html">Hino Finance</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -254,9 +276,13 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link " href="../news-grid.html">News</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item " href="../news-grid.html">News Room</a>
+            </div>
+        </li>
 
           <li class="nav-item">
             <a class="nav-link " href="../locate-dealer.html">Find A Dealer</a>
@@ -286,7 +312,6 @@
                     <h3 class="intro-title mb-4 ">
                         <span class="color-b">HINO </span> FINANCIAL SERVICES
                       </h3>
-
                     <a href="#" class="btn custom-btn">GET BROCHURE</a>
                 </div>
             </div>
@@ -315,7 +340,7 @@
             <div class="row">
                 <div class="col-12 text-start">
                     <h2>YOUR ONE STOP SHOP FOR TRUCK FINANCE</h2>
-    
+                    <br>
                     <p>There is no better way to buy a Hino Truck that suits your business needs than with Hino Financial Services (HFS). We offer a wide range of finance products and services that are at your disposal to provide you with easy solutions when considering your next truck purchase.
                         HFS strives to offer finance options through dealers or online that are designed to help meet your business needs.
                         By working hand in hand, HFS and Hino Dealers draw on each other's strengths, giving us the edge to create flexible finance products that help fit your company's needs. </p>
@@ -324,6 +349,7 @@
             </div>
         </div>
     </section>
+    <br>
     <section class="connect section-margin">
         <div class="container">
             <div class="row">
@@ -381,9 +407,9 @@
             </div>
         </div>
     </section>
-    
+    <br><br>
     <section class="front-product section-padding section-t4">
-        <div class="container-fluid p-0"id="products">
+        <div class="container-fluid p-0" id="products">
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <img src="../hino-services/hino-finance-interia.jpg" class="img-fluid" alt="">
@@ -399,7 +425,6 @@
             </div>
 
             <div class="row section-t4 ">
-
                 <div class="col-lg-6 col-12 section-t4">
                     <div class="px-5 py-5 py-lg-0">
                         <h1 class="">LEASE FINANCE</h1>
@@ -415,9 +440,10 @@
             </div>
         </div>
     </section>
-    <section class="services-section section-padding section-t4" id="onlineService">
+
+    <section class="services-section" id="onlineService">
       <h2>HFS ONLINE SERVICED</h2>
-      <div class="services-container">
+      <div class="finance-container">
         <div class="hino-service">
           <img src="../assets/img/red-hino.png" alt="">
         </div>
@@ -430,29 +456,34 @@
       </div>
       <div class="services-container">
           <div class="service-box">
-              <h3>APPLY ONLINE</h3>
-              <p>Easy and convenient way to apply for Finance</p>
+            <h3>ACCOUNT SERVICES</h3>
+            <p>With Hino Financial Services it's not just about finance, it's about the whole experience</p>
+            <div class="buttons">
               <a href="https://www.toyfin.co.za/financeApps/company/asset/index.xhtml?appType=CPY&siteID=HINOCORP&appSrc=" class="btn">BUSINESS OWNERS</a>
               <a href="https://www.toyfin.co.za/financeApps/individual/asset/select.xhtml" class="btn">INDIVIDUALS</a>
-          </div>
+            </div>
+        </div>
 
-          <!-- Second Service Box -->
           <div class="service-box">
               <h3>ACCOUNT SERVICES</h3>
               <p>With Hino Financial Services it's not just about finance, it's about the whole experience</p>
-              <a href="https://www.toyfin.co.za/selfService/index.xhtml?siteID=hino" class="btn">ACCOUNT SERVICES</a>
+              <div class="buttons">
+                <a href="https://www.toyfin.co.za/selfService/index.xhtml?siteID=hino" class="btn">ACCOUNT SERVICES</a>
+                
+              </div>
           </div>
 
-          <!-- Third Service Box -->
           <div class="service-box">
               <h3>ICONTRACT</h3>
               <p>Check and digitally sign a series of very important documents to finalise your contract</p>
-              <a href="https://www.toyfin.co.za/Contracting/juristic/index.xhtml?siteID=hinocorp&appType=JUR" class="btn">BUSINESS OWNERS</a>
+              <div class="buttons">
+                <a href="https://www.toyfin.co.za/Contracting/juristic/index.xhtml?siteID=hinocorp&appType=JUR" class="btn">BUSINESS OWNERS</a>
+              </div>
           </div>
       </div>
   </section>
 
-  </main><!-- End #main -->
+  </main>
 
   <section class="section-footer">
     <div class="container">
@@ -536,7 +567,7 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">Motushino</span> All Rights Reserved.
+              <span class="color-a">Motus Hino</span> All Rights Reserved.
             </p>
           </div>
           <div id="truckList"></div>
@@ -558,7 +589,7 @@
 
   <script>
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20,
         loop: false,
         pagination: {

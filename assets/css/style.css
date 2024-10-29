@@ -4,7 +4,8 @@
   --primary-color:              #FF4400;
   --danger-color:              #ff0000;
 
-  --section-bg-color:           #f0f8ff;
+  --section-bg-color:           #f9f9f9;
+  
   --dark-color:                 #000000;
   --grey-color:                 #d0d1d1;
   --creamwhite-color:           #edeae5;
@@ -215,7 +216,7 @@ a:hover {
   /* width: 3px;  */
 
   background-color: red;
-  animation: progress 30s linear infinite; /* Adjust animation duration as needed */
+  animation: progress 70s linear infinite; /* Adjust animation duration as needed */
 }
 
 .front-product {
@@ -595,7 +596,7 @@ a:hover {
 .carousel-pagination .swiper-pagination-bullet {
   width: 18px;
   height: 10px;
-  background-color: #555;
+  background-color: #555555;
   margin: 0 4px;
   border-radius: 0;
   opacity: 1;
@@ -792,12 +793,12 @@ a:hover {
 --------------------------------------------------------------*/
 .navbar-default {
   transition: all 0.5s ease-in-out;
-  background-color: #ffffff;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  background-color: #fff;
+  padding-top: 10px; /* 18px*/
+  padding-bottom: 10px; /*18px*/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
+  box-shadow: 1px 2px 15px #6464644d;
 }
 
 .navbar-default .nav-search {
@@ -2088,7 +2089,7 @@ a:hover {
 .about .nav-pills .show>.nav-link {
   background: transparent;
   border-left-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--danger-color);
 }
 
 .aboutsection {
@@ -2476,4 +2477,8 @@ footer .copyright-footer {
 
 footer .credits {
   font-size: 14px;
+}
+
+.contact-map iframe {
+  max-height: 300px;
 }

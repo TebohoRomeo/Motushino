@@ -29,9 +29,59 @@ const data = {
           image: "./assets/img/product/614-AT-SWB.jpg",
         },
         {
-          name: "Hino 300 614 LWB MT",
+          name: "Hino 300 714 LWB MT",
           price: "R649,624 Excl VAT",
           image: "./assets/img/product/714-SWB.jpg",
+        },
+        {
+          name: "Hino 300 714 SWB AT",
+          price: "R673,256 Excl VAT",
+          image: "./assets/img/product/714-SWB.jpg",
+        },
+        {
+          name: "Hino 300 714 LWB MT",
+          price: "R659,146 Excl VAT",
+          image: "./assets/img/product/614-AT-SWB.jpg",
+        },
+        {
+          name: "Hino 300 816 SWB MT",
+          price: "R707,791 Excl VAT",
+          image: "./assets/img/product/ak3_menu_thumb.jpg",
+        },
+        {
+          name: "Hino 300 816 SWB AT",
+          price: "R715,841 Excl VAT",
+          image: "./assets/img/product/ak3_menu_thumb.jpg",
+        },
+        {
+          name: "Hino 300 916 LWB MT",
+          price: "R763,336 Excl VAT",
+          image: "./assets/img/product/ba3_menu_thumb.jpg",
+        },
+        {
+          name: "Hino 300 916 LWB AT",
+          price: "R787,072 Excl VAT",
+          image: "./assets/img/product/ba3_menu_thumb.jpg",
+        },
+      ],
+    },
+    {
+      name: "Order Models Only - Hino 500",
+      models: [
+        {
+          name: "Hino 500 2836 6x4 Mixer",
+          price: "R1,524,450 Excl VAT",
+          image: "./assets/img/hino-500/2036-mix-tip.jpg",
+        },
+        {
+          name: "Hino 500 1627 CC MT *",
+          price: "R1,474,810 Excl VAT",
+          image: "./assets/img/hino-500/2036-mix-tip.jpg",
+        },
+        {
+          name: "Hino 500 1627 CC AT *",
+          price: "R1,564,150 Excl VAT",
+          image: "./assets/img/hino-500/crew-cab-1627FC.jpg",
         },
       ],
     },
@@ -89,17 +139,15 @@ data.series.forEach((series) => {
                                     <a href="#" class="product-title-link">${model.name}</a>
                                 </h5>
                                 <p class="product-p">${model.price}</p>
-                            </div>
-                        </div>
+                                </div>
+                                </div>
+                                
                     </div>
                 `;
 
     contentDiv.appendChild(modelDiv);
   });
 });
-
-
-
 
 // <section class="products section-padding">
 // <div class="container">
@@ -109,10 +157,3 @@ data.series.forEach((series) => {
 // <!-- REtuen the html here -->
 // </div>
 // </section>
-
-
-
-
-
-
-
