@@ -91,22 +91,22 @@ const data = {
         {
           name: "Hino 700 2841 Tip SSC (AMT)",
           price: "R1,674,720 Excl VAT",
-          image: "./assets/img/product/HINO 700-2841 FC AMT 6X4.png",
+          image: "./assets/img/Featured/Hino_700.png",
         },
         {
           name: "Hino 700 2841 FC SSC (AMT)",
           price: "R1,584,740 Excl VAT",
-          image: "./assets/img/product/HINO 700-2841 FC AMT 6X4.png",
+          image: "./assets/img/Featured/Hino_700.png",
         },
         {
           name: "Hino 700 2841 TT SSC 3.9 Stl (AMT)",
           price: "R1,643,720 Excl VAT",
-          image: "./assets/img/product/HINO 700-2841 FC AMT 6X4.png",
+          image: "./assets/img/Featured/Hino_700.png",
         },
         {
           name: "Hino 700 2841 TT SSC 3.9 Stl (AMT)",
           price: "R2,060,559 Excl VAT",
-          image: "./assets/img/product/HINO 700-2841 FC AMT 6X4.png",
+          image: "./assets/img/Featured/Hino_700.png",
         },
       ],
     },
@@ -127,6 +127,7 @@ data.series.forEach((series) => {
   series.models.forEach((model) => {
     const modelDiv = document.createElement("div");
     modelDiv.classList.add("col-lg-4", "col-12", "mb-3");
+    // modelDiv.classList.add("col-12", "mb-3", "d-flex", "justify-content-center");
 
     modelDiv.innerHTML = `
                     <div class="product-thumb">

@@ -30,13 +30,9 @@
 
   <style>
     /* General styling */
-    /* body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    } */
+    
 
-    .intro-carousel {
+    /* .intro-carousel {
         position: relative;
     }
 
@@ -69,7 +65,7 @@
     .intro-title {
         font-size: 3rem;
         font-weight: bold;
-    }
+    } */
 
     /* .custom-btn {
         background-color: red;
@@ -162,16 +158,16 @@
 
         .finance-container {
             display: flex;
-            /* justify-content: center; */
+            justify-content: center;
+            margin-right: 6rem;
             /* gap: 50px; */
-
             margin-top: 20px;
         }
 
         .service-box {
             /* background-color: white; */
             /* border-radius: 10px; */
-            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             max-width: 340px;
             text-align: center;
@@ -179,8 +175,8 @@
         }
 
         .hino-service {
-          padding: 10px ;
-          max-width: 360px;
+          padding: 10px;
+          max-width: 400px;
             text-align: center;
         }
 
@@ -228,6 +224,7 @@
         @media (max-width: 768px) {
             .services-container {
                 flex-direction: column;
+                margin-left: 2rem;
                 gap: 20px;
             }
 
@@ -235,14 +232,16 @@
               width: 50rem;
               margin-bottom: 30px;
             }
+            
+            .service-box {
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+            padding: 20px;
+            max-width: 340px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
         }
-        @media (max-width: 768px) {
-           
-
-            .hino-service img {
-              width: 50rem;
-              margin-bottom: 30px;
-            }
         }
     </style>
 </style>
@@ -252,10 +251,15 @@
   <!-- ======= Header/Navbar ======= -->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <a class="navbar-brand text-brand" href="../index.html">
         <img src="../assets/img/Logo.png" alt="">
       </a>
-
+    
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
 
@@ -300,7 +304,6 @@
   </nav>
 
   <div class="intro intro-carousel">
-
     <div class="row">
       <div class="carousel-item-a intro-item bg-image" style="background-image: url(./hf1.jpg)">
         <div class="overlay overlay-a"></div>
@@ -322,15 +325,14 @@
     </div>
   </div>
   <main id="main">
-
-    <div class="card-container">
-      <div class="card">
+    <div class="card-container hide-logo">
+      <div class="card hide-logo">
           <a href="#">BENEFITS</a>
       </div>
-      <div class="card">
+      <div class="card hide-logo">
           <a href="#products">PRODUCTS</a>
       </div>
-      <div class="card">
+      <div class="card hide-logo">
           <a href="#onlineService">ONLINE SERVICES</a>
       </div>
   </div>
