@@ -28,19 +28,27 @@
 <body>
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">
-        <img src="./assets/img/Logo.png" alt="">
+      <a class="navbar-brand text-brand" href="./index.html">
+        <img src="./assets/img/relogo.png" alt="">
       </a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link " href="./hino-range-grid.html">Trucks</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Trucks</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="./hino-200.html">Hino 200</a>
+              <a class="dropdown-item " href="./hino-300.html">Hino 300</a>
+              <a class="dropdown-item " href="./hino-500.html">Hino 500</a>
+              <a class="dropdown-item " href="./hino-700.html">Hino 700</a>
+            </div>
           </li>
 
           <li class="nav-item">
@@ -74,9 +82,7 @@
         </ul>
       </div>
     </div>
-    <a class="navbar-brand text-brand hide-logo" href="index.html">
-      <img src="./assets/img/Hino_Logo.png" alt="" style="width: 5rem; margin-right: 6rem;">
-    </a>
+
   </nav>
 
   <!-- ======= Intro Section ======= -->
@@ -197,13 +203,13 @@
         <div class="row">
           <div class="col-12">
             <div class="options-container">
-              <a href="./hino-200.html" class="option">HINO 200</a>
+              <a href="./hino-200.html" class="option">Hino 200</a>
               <span class="divider"></span>
-              <a href="./hino-300.html" class="option">HINO 300</a>
+              <a href="./hino-300.html" class="option">Hino 300</a>
               <span class="divider"></span>
-              <a href="./hino-700.html" class="option">HINO 700</a>
+              <a href="./hino-700.html" class="option">Hino 700</a>
               <span class="divider"></span>
-              <a href="./hino-services/hino-parts-service.html" class="option">HINO Parts & Services</a>
+              <a href="./hino-services/hino-parts-service.html" class="option">Hino Parts & Services</a>
             </div>
             <div class="progress-line"></div>
           </div>
@@ -216,13 +222,13 @@
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">FEATURED</h2>
+                <h2 class="title-a">Featured</h2>
               </div>
-              <div class="title-link">
+              <!-- <div class="title-link">
                 <a href="./hino-range-grid.html">View All
                   <span class="bi bi-chevron-right"></span>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -240,7 +246,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="hino-200.html">HINO 200
+                        <a href="hino-200.html">Hino 200
                           <!-- <br /> Olive Road Two</a> -->
                       </h2>
                     </div>
@@ -263,7 +269,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="hino-300.html">HINO 300
+                        <a href="hino-300.html">Hino 300
                           <!-- <br /> Central Park</a> -->
                       </h2>
                     </div>
@@ -286,7 +292,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="hino-300-cc.html">HINO 300 CC
+                        <a href="hino-300-cc.html">Hino 300 CC
                       </h2>
                     </div>
                     <div class="card-body-a">
@@ -308,7 +314,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="hino-500.html">HINO 500
+                        <a href="hino-500.html">Hino 500
                       </h2>
                     </div>
                     <div class="card-body-a">
@@ -329,7 +335,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="hino-500-cc.html">HINO 500 CC
+                        <a href="hino-500-cc.html">Hino 500 CC
                       </h2>
                     </div>
                     <div class="card-body-a">
@@ -350,7 +356,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="hino-700.html">HINO 700
+                        <a href="hino-700.html">Hino 700
                       </h2>
                     </div>
                     <div class="card-body-a">
@@ -501,7 +507,7 @@
           <div class="widget-a">
             <div class="w-header-a">
               <h3 class="w-title-a text-brand">
-                <img src="./assets/img/Logo.png" alt="">
+                <img src="../assets/img/relogo.png" alt="">
               </h3>
             </div>
             <div class="socials-a">
